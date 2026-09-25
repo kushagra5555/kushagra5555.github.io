@@ -11,3 +11,17 @@ export interface Course {
   published: boolean;
   review_required: boolean;
 }
+
+export interface EditablePublicField<T> {
+  value: T;
+  reviewRequired: boolean;
+}
+
+export interface PublicBusinessProfile {
+  brandName: string;
+  tagline: string;
+  legalCompanyName: string;
+  supportPhone: string;
+  supportEmail: string;
+  website: string;
+}

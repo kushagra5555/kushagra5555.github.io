@@ -8,10 +8,6 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "noEmit": true,
-    "baseUrl": ".",
-    "paths": {
-      "@mission/shared/*": ["packages/shared/src/*"]
-    }
+    "noEmit": true
   }
 }
