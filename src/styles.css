@@ -404,13 +404,16 @@ body.has-site-cursor iframe, body.has-site-cursor input, body.has-site-cursor te
 .model-loop-list h3 { margin: 0 0 7px; color: var(--olive-deep); font: 400 clamp(1.5rem, 3vw, 2.4rem)/1 Georgia, 'Times New Roman', serif; }
 .model-loop-list p { margin: 0; color: var(--muted); line-height: 1.5; }
 @media (max-width: 700px) {
-  .model-loop { height: 620svh; }
+  /* Keep the loop expressive on phones without making every stage require a
+     full arm-length swipe. The desktop track remains intentionally spacious. */
+  .model-loop { height: 430svh; }
   .model-loop-pin { padding: 22px 6vw; }
-  .model-loop-heading h2 { margin-top: 32px; font-size: clamp(3rem, 14vw, 5.5rem); }
-  .model-loop-heading p { max-width: 290px; }
-  .model-loop-stage { top: 55%; width: 86vw; min-height: 230px; }
-  .model-stage-copy h3 { font-size: clamp(3.5rem, 16vw, 6rem); }
-  .model-stage-copy p { max-width: 300px; font-size: 1rem; }
+  .model-loop-heading { max-width: 330px; }
+  .model-loop-heading h2 { margin-top: 28px; font-size: clamp(2.9rem, 13.2vw, 4.6rem); line-height: .84; }
+  .model-loop-heading p { max-width: 275px; margin-top: 19px; font-size: 12px; line-height: 1.45; }
+  .model-loop-stage { top: 65%; width: 88vw; min-height: 175px; }
+  .model-stage-copy h3 { margin: 11px 0 10px; font-size: clamp(2.8rem, 13vw, 4.5rem); line-height: .86; }
+  .model-stage-copy p { max-width: 270px; font-size: .9rem; line-height: 1.35; }
   .model-loop-orbit { width: 92vw; }
   .model-loop-progress { left: 6vw; right: 6vw; bottom: 30px; display: block; }
   .model-loop-progress small { display: block; margin-top: 12px; font-size: 8px; }
