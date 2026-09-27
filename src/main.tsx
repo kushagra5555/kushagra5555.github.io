@@ -225,8 +225,8 @@ function EvidenceGallery() {
   }, [activeImage])
 
   const evidence = [
-    { src: '/evidence/meta-campaigns.png', alt: 'Meta Ads campaign dashboard showing campaign performance' },
-    { src: '/evidence/meta-campaign-detail.png', alt: 'Meta Ads campaign dashboard with lead and cost-per-result data' },
+    { src: '/evidence/meta-campaigns.png?v=2', alt: 'Meta Ads campaign dashboard showing campaign performance' },
+    { src: '/evidence/meta-campaign-detail.png?v=2', alt: 'Meta Ads campaign dashboard with lead and cost-per-result data' },
   ]
 
   return <>
