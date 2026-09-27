@@ -57,6 +57,10 @@ export default function ScrollVideoHero() {
     let touchY = 0
     let raf = 0
     let lastWord = -2
+    // A phone swipe covers less physical distance than a desktop wheel burst.
+    // Use a shorter scrub distance on touch devices so the hero advances
+    // decisively without requiring repeated hard swipes.
+    const scrubDistance = mobile ? 1000 : 2800
     const words = ['IMAGINE', 'BUILD', 'CONNECT', 'ITERATE', 'MOVE']
     const priorBodyStyle = document.body.getAttribute('style')
 
@@ -119,7 +123,7 @@ export default function ScrollVideoHero() {
       if (!locked || !readyRef.current) return
       if (delta < 0) { exitRequested = false; window.clearTimeout(exitTimer) }
       if (target >= .998 && delta > 0) { requestExit(); return }
-      target = clamp(target + delta / 2800, 0, 1)
+      target = clamp(target + delta / scrubDistance, 0, 1)
       if (target >= .998 && delta > 0) requestExit()
     }
     const onWheel = (event: WheelEvent) => { if (!locked) return; event.preventDefault(); addDelta(event.deltaY) }

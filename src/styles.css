@@ -406,7 +406,7 @@ body.has-site-cursor iframe, body.has-site-cursor input, body.has-site-cursor te
 @media (max-width: 700px) {
   /* Keep the loop expressive on phones without making every stage require a
      full arm-length swipe. The desktop track remains intentionally spacious. */
-  .model-loop { height: 430svh; }
+  .model-loop { height: 300svh; }
   .model-loop-pin { padding: 22px 6vw; }
   .model-loop-heading { max-width: 330px; }
   .model-loop-heading h2 { margin-top: 28px; font-size: clamp(2.9rem, 13.2vw, 4.6rem); line-height: .84; }
