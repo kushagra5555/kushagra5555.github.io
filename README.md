@@ -2,7 +2,7 @@
 
 This repository contains my current personal portfolio website, published at [kushagra5555.github.io](https://kushagra5555.github.io).
 
-It presents my latest full-stack, AI, frontend, and product-engineering work, including:
+It presents my latest AI engineering, frontend, and product-engineering work, including:
 
 - [AI Meeting Intelligence Assistant](https://github.com/kushagra5555/ai-meeting-intelligence-assistant)
 - [Legal Document Investigation Agent](https://github.com/kushagra5555/legal-document-investigation-agent)
